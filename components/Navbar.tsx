@@ -16,7 +16,7 @@ function Navbar() {
           etran
         </h1>
       </div>
-      <button className="capitalize p-4 text-(--forground) bg-(--accent-2) rounded-lg">
+      <button className="capitalize p-4 text-(--forground) bg-(--accent-1) rounded-lg">
         get started
       </button>
     </nav>
