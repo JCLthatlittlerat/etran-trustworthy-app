@@ -41,23 +41,23 @@ export default function Home() {
               objectPosition: "center",
             }}
           />
-          <div className="popup-1 bg-(--accent-2) rounded-full absolute top-[15%] right-80 px-4 py-2 flex items-center gap-2 opacity-70">
-            <span className=" bg-(--accent-1) p-4 rounded-full">
+          <div className="popup-1 bg-(--accent-2)/60 rounded-full absolute top-[15%] right-60 px-4 py-2 flex items-center gap-2 ">
+            <span className=" bg-(--accent-1) p-4 rounded-full text-(--accent-2)">
               <FaCheck />
             </span>
-            <h1 className="opacity-100 pr-4">money sent!</h1>
+            <h1 className="pr-4">money sent!</h1>
           </div>
-          <div className="popup-2 bg-(--accent-2) rounded-full absolute top-[30%] left-60 px-4 py-2 flex items-center gap-2 opacity-70">
-            <span className=" bg-(--accent-1) p-4 rounded-full">
+          <div className="popup-2 bg-(--accent-2)/60 rounded-full absolute top-[30%] left-40 px-4 py-2 flex items-center gap-2 ">
+            <span className=" bg-(--accent-1) p-4 rounded-full text-(--accent-2)">
               <LuChartNoAxesCombined />
             </span>
-            <h1 className="opacity-100 pr-4">Interest earned!</h1>
+            <h1 className="pr-4">Interest earned!</h1>
           </div>
-          <div className="popup-3 bg-(--accent-2) rounded-full absolute top-[75%] left-100 px-4 py-2 flex items-center gap-2 opacity-70">
-            <span className=" bg-(--accent-1) p-4 rounded-full">
+          <div className="popup-3 bg-(--accent-2)/60 rounded-full absolute top-[75%] left-100 px-4 py-2 flex items-center gap-2">
+            <span className=" bg-(--accent-1) p-4 rounded-full text-(--accent-2)">
               <GiWallet />
             </span>
-            <h1 className="opacity-100 pr-4">payment received!</h1>
+            <h1 className="pr-4">payment received!</h1>
           </div>
         </div>
       </section>
