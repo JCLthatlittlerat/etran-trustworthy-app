@@ -1,7 +1,7 @@
 import Card from "@/components/Card";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import Footer from "@/components/Footer";
+import Socials from "@/components/Socials";
 import { FaCheck } from "react-icons/fa6";
 import { GiWallet } from "react-icons/gi";
 import { LuChartNoAxesCombined } from "react-icons/lu";
@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
           <Card />
         </div>
-        <Footer />
+        <Socials />
       </section>
       <section className="main-content-section">
         <div className="hero-container relative capitalize text-xl text-(--background-2) ">
@@ -98,7 +98,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <article className="showcase border">
+        <section className="showcase border">
           <div className="benefits">
             <div className="benefits-desc">
               <h1 className="text-5xl text-center pt-10 capitalize">
@@ -133,8 +133,56 @@ export default function Home() {
               })}
             </div>
           </div>
-          <div className="proofs"></div>
-        </article>
+          <section className="proofs p-10 max-w-300 mx-auto">
+            <h1 className="text-5xl text-center pt-10 capitalize">
+              the most reliable app
+            </h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 ">
+              <div className="card  ">
+                <div className="min-w-87.5 min-h-70 relative border">
+                  <Image
+                    src={"/markus-winkler-ahjzVINkuCs-unsplash.jpg"}
+                    alt="card-image"
+                    fill
+                    className="  rounded-2xl pb-4 shadow-2xl object-cover object-right min-h-95"
+                  />
+                </div>
+                <div className="relative">
+                  <h4 className="capitalize">
+                    Scale Your Team, Not Your Card Expenses
+                  </h4>
+                  <p>
+                    Issue virtual and physical cards at no additional cost to
+                    support teams of any size.
+                  </p>
+                </div>
+              </div>
+              <div className="card border">
+                <Image
+                  src={"/rebekah-roy-anKRaWvMbRU-unsplash.jpg"}
+                  alt="tax-invoice"
+                  width={600}
+                  height={260}
+                  className="object-cover object-right border rounded-2xl pb-4"
+                />
+                <h4 className="capitalize">
+                  Effortless Paper Tracking, Mobile Convenience
+                </h4>
+                <p>
+                  Get precise control—at scale—with the ability to lock any card
+                  and restrict any type of spend.
+                </p>
+              </div>
+            </div>
+          </section>
+          <Image
+            src={"/standing-man-holding-phone.png"}
+            alt="standing-man-holding-phone"
+            width={1050}
+            height={350}
+            className="object-cover object-top "
+          />
+        </section>
       </section>
     </main>
   );
