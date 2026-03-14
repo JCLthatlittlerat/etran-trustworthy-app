@@ -134,55 +134,82 @@ export default function Home() {
             </div>
           </div>
           <section className="proofs p-10 max-w-300 mx-auto">
-            <h1 className="text-5xl text-center pt-10 capitalize">
-              the most reliable app
-            </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 ">
-              <div className="card  ">
-                <div className="min-w-87.5 min-h-70 relative border">
-                  <Image
-                    src={"/markus-winkler-ahjzVINkuCs-unsplash.jpg"}
-                    alt="card-image"
-                    fill
-                    className="  rounded-2xl pb-4 shadow-2xl object-cover object-right min-h-95"
-                  />
-                </div>
-                <div className="relative">
-                  <h4 className="capitalize">
-                    Scale Your Team, Not Your Card Expenses
-                  </h4>
-                  <p>
-                    Issue virtual and physical cards at no additional cost to
-                    support teams of any size.
-                  </p>
-                </div>
-              </div>
-              <div className="card border">
-                <Image
-                  src={"/rebekah-roy-anKRaWvMbRU-unsplash.jpg"}
-                  alt="tax-invoice"
-                  width={600}
-                  height={260}
-                  className="object-cover object-right border rounded-2xl pb-4"
-                />
-                <h4 className="capitalize">
-                  Effortless Paper Tracking, Mobile Convenience
-                </h4>
-                <p>
-                  Get precise control—at scale—with the ability to lock any card
-                  and restrict any type of spend.
-                </p>
-              </div>
-            </div>
-          </section>
+        <h1 className="text-5xl text-center pt-10 capitalize">
+          the most reliable app
+        </h1>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 items-stretch">
+        {/* Card 1 */}
+        <div className="card shadow-sm hover:shadow-md rounded-2xl overflow-hidden flex flex-col">
+          <div className="relative h-75 w-full">
+            <Image
+              src="/markus-winkler-ahjzVINkuCs-unsplash.jpg"
+              alt="card-image"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="p-4">
+            <h4 className="capitalize text-xl font-semibold">
+              Scale Your Team, Not Your Card Expenses
+            </h4>
+            <p>
+              Issue virtual and physical cards at no additional cost to
+              support teams of any size.
+            </p>
+          </div>
+        </div>
+
+        {/* Card 2 */}
+        <div className="card shadow-sm hover:shadow-md rounded-2xl overflow-hidden flex flex-col">
+          <div className="relative h-75 w-full">
+            <Image
+              src="/rebekah-roy-anKRaWvMbRU-unsplash.jpg"
+              alt="tax-invoice"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="p-4">
+            <h4 className="capitalize text-xl font-semibold">
+              Effortless Paper Tracking, Mobile Convenience
+            </h4>
+            <p>
+              Get precise control—at scale—with the ability to lock any card
+              and restrict any type of spend.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+        <div className="">
           <Image
-            src={"/standing-man-holding-phone.png"}
-            alt="standing-man-holding-phone"
-            width={1050}
-            height={350}
-            className="object-cover object-top "
-          />
-        </section>
+                    src={"/standing-man-holding-phone.png"}
+                    alt="standing-man-holding-phone"
+                    width={720}
+                    height={350}
+                    className="object-cover object-top max-h-[350px] mx-auto "
+                    style={{objectPosition: '', }}
+            />
+        </div>     
+      </section>
+      <section>
+            <h1 className="text-5xl text-center pt-10 capitalize">
+          First class software
+        </h1>
+        <p className=" text-lg text-center max-w-[55ch] mx-auto py-4">
+Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
+              </p>
+              <div className="cards-container">
+                {/* download the icons and put the in here */}
+              </div>
+      </section>
+
       </section>
     </main>
   );
