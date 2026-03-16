@@ -6,12 +6,13 @@ import { FaCheck } from "react-icons/fa6";
 import { GiWallet } from "react-icons/gi";
 import { LuChartNoAxesCombined } from "react-icons/lu";
 import { data } from "@/store/data";
-import Footer from "@/components/Socials";
+import Footer from "@/components/Footer";
+import Button from '@/components/button';
 
 export default function Home() {
   return (
     <main className=" grid grid-cols-1 md:grid-cols-5 min-h-screen bg-(--background-3)">
-      <section className="md:sticky md:top-0 md:h-[110vh] col-span-2 sidebar-section bg-(--background-1) px-10   ">
+      <section className="md:sticky md:top-0 md:h-screen col-span-2 sidebar-section bg-(--background-1) px-10   ">
         <Navbar />
         <h1 className="capitalize text-5xl text-(--background-3)">
           money tranfers
@@ -114,7 +115,7 @@ export default function Home() {
                 return (
                   <article
                     key={item.id}
-                    className="flex flex-col justify-center items-center gap-4 rounded-xl min-h-55 bg-(--accent-1)"
+                    className="flex flex-col justify-center items-center gap-4 rounded-xl min-h-55 bg-(--accent-1) hover:scale-102 "
                   >
                     {item.icon.startsWith("/") ? (
                       <Image
@@ -173,6 +174,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
                     />
+                    <div className="overlay absolute bg-black opacity-40 z-50 w-full h-75 border-t-"></div>
                   </div>
 
                   <div className="p-4">
@@ -205,7 +207,7 @@ export default function Home() {
             First class software
           </h1>
           <p className=" text-lg text-center max-w-[55ch] mx-auto py-4">
-  Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
+              Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
                 </p>
                 <div className="cards-container grid grid-cols-1 sm:grid-cols-4 mx-15 gap-8 text-center">
                   <div className="w-full h-45 flex flex-col justify-around">
@@ -235,15 +237,11 @@ export default function Home() {
             <Image src={'/daria-nepriakhina-_XR5rkprHQU-unsplash.jpg'} alt="get started" width={720} height={350} className="mx-auto rounded-2xl"/>
             <div className="get-started-details absolute left-[10%] bottom-[10%]">
               <p className="max-w-[20ch] text-3xl text-(--background-2) my-4">Download Etran and manage everything from your phone.</p>
-              <button className="capitalize p-4 text-(--forground) bg-(--accent-1) rounded-lg">
-                get started
-              </button>
+              <Button/>
             </div>
           </div>
         </section>
         <Footer/>
-
- 
       </section>
     </main>
   );
