@@ -30,31 +30,30 @@ export default function Home() {
         <Socials />
       </section>
       <section className="col-span-3 main-content-section">
-        <div className="hero-container relative capitalize text-xl text-(--background-2) ">
+        <div className="hero-container h-140 relative capitalize text-xl text-(--background-2) ">
           <Image
             src={"/nel-ranoko-iaHFmpXVltw-unsplash.jpg"}
             alt="hero image"
-            width={1200}
-            height={700}
-            className="rounded-3xl mx-auto my-8"
+            fill
+            className="rounded-4xl mx-auto p-4"
             style={{
               objectFit: "cover",
               objectPosition: "center",
             }}
           />
-          <div className="popup-1 bg-(--accent-2)/60 rounded-full absolute top-[15%] right-60 px-4 py-2 flex items-center gap-2 ">
+          <div className="popup-1 bg-(--accent-2)/60 rounded-full absolute top-[15%] right-[10%] px-4 py-2 flex items-center gap-2 ">
             <span className=" bg-(--accent-1) p-4 rounded-full text-(--accent-2) text-2xl">
               <FaCheck />
             </span>
             <h1 className="pr-4">money sent!</h1>
           </div>
-          <div className="popup-2 bg-(--accent-2)/60 rounded-full absolute top-[30%] left-40 px-4 py-2 flex items-center gap-2 ">
+          <div className="popup-2 bg-(--accent-2)/60 rounded-full absolute top-[30%] left-[7%] px-4 py-2 flex items-center gap-2 ">
             <span className=" bg-(--accent-1) p-4 rounded-full text-(--accent-2) text-2xl">
               <LuChartNoAxesCombined />
             </span>
             <h1 className="pr-4">Interest earned!</h1>
           </div>
-          <div className="popup-3 bg-(--accent-2)/60 rounded-full absolute top-[75%] left-100 px-4 py-2 flex items-center gap-2">
+          <div className="popup-3 bg-(--accent-2)/60 rounded-full absolute top-[75%] left-[30%] px-4 py-2 flex items-center gap-2">
             <span className=" bg-(--accent-1) p-4 rounded-full text-(--accent-2) text-2xl">
               <GiWallet />
             </span>
@@ -65,7 +64,7 @@ export default function Home() {
           <h1 className="text-3xl max-w-[25ch] text-center mx-auto py-10">
             We escalate transfer efficiency and productivity
           </h1>
-          <div className="flex justify-evenly px-10 py-10">
+          <div className="flex justify-evenly px-10 py-10 gap-4">
             <Image
               src="/blooming-logo.svg"
               alt="Company logos"
@@ -98,7 +97,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <section className="showcase border">
+        <section className="showcase">
           <div className="benefits">
             <div className="benefits-desc">
               <h1 className="text-5xl text-center pt-10 capitalize">
@@ -109,12 +108,12 @@ export default function Home() {
                 streamline your workflow to automate tasks, stay organized
               </p>
             </div>
-            <div className="benefit-cards mx-auto border grid grid-cols-1 sm:grid-cols-2 gap-4 items-center px-20">
+            <div className="benefit-cards mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 items-center px-20">
               {data.card2.map((item) => {
                 return (
                   <article
                     key={item.id}
-                    className="border flex flex-col justify-center items-center gap-4 rounded-xl min-h-55 bg-(--accent-1)"
+                    className="flex flex-col justify-center items-center gap-4 rounded-xl min-h-55 bg-(--accent-1)"
                   >
                     {item.icon.startsWith("/") ? (
                       <Image
@@ -133,72 +132,74 @@ export default function Home() {
               })}
             </div>
           </div>
+
           <section className="proofs p-10 max-w-300 mx-auto">
-        <h1 className="text-5xl text-center pt-10 capitalize">
-          the most reliable app
-        </h1>
+              <h1 className="text-5xl text-center pt-10 capitalize">
+                the most reliable app
+              </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 items-stretch">
-        {/* Card 1 */}
-        <div className="card shadow-sm hover:shadow-md rounded-2xl overflow-hidden flex flex-col">
-          <div className="relative h-75 w-full">
-            <Image
-              src="/markus-winkler-ahjzVINkuCs-unsplash.jpg"
-              alt="card-image"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 items-stretch">
+                {/* Card 1 */}
+                <div className="card shadow-sm hover:shadow-md rounded-2xl overflow-hidden flex flex-col">
+                  <div className="relative h-75 w-full">
+                    <Image
+                      src="/markus-winkler-ahjzVINkuCs-unsplash.jpg"
+                      alt="card-image"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
 
-          <div className="p-4">
-            <h4 className="capitalize text-xl font-semibold">
-              Scale Your Team, Not Your Card Expenses
-            </h4>
-            <p>
-              Issue virtual and physical cards at no additional cost to
-              support teams of any size.
-            </p>
-          </div>
-        </div>
+                  <div className="p-4">
+                    <h4 className="capitalize text-xl font-semibold">
+                      Scale Your Team, Not Your Card Expenses
+                    </h4>
+                    <p>
+                      Issue virtual and physical cards at no additional cost to
+                      support teams of any size.
+                    </p>
+                  </div>
+                </div>
 
-        {/* Card 2 */}
-        <div className="card shadow-sm hover:shadow-md rounded-2xl overflow-hidden flex flex-col">
-          <div className="relative h-75 w-full">
-            <Image
-              src="/rebekah-roy-anKRaWvMbRU-unsplash.jpg"
-              alt="tax-invoice"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
+                {/* Card 2 */}
+                <div className="card shadow-sm hover:shadow-md rounded-2xl overflow-hidden flex flex-col">
+                  <div className="relative h-75 w-full">
+                    <Image
+                      src="/rebekah-roy-anKRaWvMbRU-unsplash.jpg"
+                      alt="tax-invoice"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
 
-          <div className="p-4">
-            <h4 className="capitalize text-xl font-semibold">
-              Effortless Paper Tracking, Mobile Convenience
-            </h4>
-            <p>
-              Get precise control—at scale—with the ability to lock any card
-              and restrict any type of spend.
-            </p>
-          </div>
-        </div>
+                  <div className="p-4">
+                    <h4 className="capitalize text-xl font-semibold">
+                      Effortless Paper Tracking, Mobile Convenience
+                    </h4>
+                    <p>
+                      Get precise control—at scale—with the ability to lock any card
+                      and restrict any type of spend.
+                    </p>
+                  </div>
+                </div>
 
-      </div>
-    </section>
-        <div className="">
+              </div>
+          </section>
+
+          <div className="black-man-standing">
           <Image
                     src={"/standing-man-holding-phone.png"}
                     alt="standing-man-holding-phone"
                     width={720}
                     height={350}
-                    className="object-cover object-top max-h-[350px] mx-auto  my-6"
+                    className="object-cover object-top max-h-[350px] mx-auto  my-6 rounded-2xl"
                     style={{objectPosition: '', }}
             />
-        </div>     
+          </div>     
       </section>
-      <section>
+      <section className="features-section">
             <h1 className="text-5xl text-center pt-10 capitalize">
           First class software
         </h1>
@@ -206,10 +207,25 @@ export default function Home() {
 Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
               </p>
               <div className="cards-container grid grid-cols-1 sm:grid-cols-4 mx-15 gap-8 text-center">
-                <div className="bg-amber-200 h-50">card-1</div>
-                <div className="bg-amber-200 h-50">card-2</div>
-                <div className="bg-amber-200 h-50">card-3</div>
-                <div className="bg-amber-200 h-50">card-4</div>
+                <div className="w-full h-45 flex flex-col justify-around">
+                  <Image src={'/wallet.png'} alt="secure storage" width={300} height={300}/>
+                  <p className="capitalize text-md">safe storage</p>
+                </div>
+                <div className="w-full h-45 flex flex-col justify-around">
+                  <Image src={'/secure.png'} alt="secure" width={300} height={300}/>
+                  <p className="capitalize text-md">secure</p>
+
+                </div>
+                <div className="w-full h-45 flex flex-col justify-around">
+                  <Image src={'/finance.png'} alt="earn interest" width={300} height={300}/>
+                  <p className="capitalize text-md">earn interest</p>
+
+                </div>
+                <div className="w-full h-45 flex flex-col justify-around">
+                  <Image src={'/people.png'} alt="family plans" width={300} height={300}/>
+                  <p className="capitalize text-md">family plans</p>
+
+                </div>
                 {/* download the icons and put the in here */}
               </div>
       </section>
