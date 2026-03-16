@@ -8,7 +8,7 @@ export default function Card() {
         return (
           <div
             key={item.id}
-            className="card bg-(--accent-3) rounded-lg p-6 flex flex-col items-center gap-2"
+            className="card bg-(--accent-3) rounded-lg p-6 flex flex-col items-center gap-2 hover:scale-105"
           >
             <Icon size={70} />
             <h2 className="text-xl capitalize max-w-[10ch] text-center ">

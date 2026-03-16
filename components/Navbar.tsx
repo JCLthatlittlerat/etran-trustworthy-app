@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./button";
 
 function Navbar() {
   return (
@@ -16,9 +17,7 @@ function Navbar() {
           etran
         </h1>
       </div>
-      <button className="capitalize p-4 text-(--forground) bg-(--accent-1) rounded-lg">
-        get started
-      </button>
+<Button/>
     </nav>
   );
 }
