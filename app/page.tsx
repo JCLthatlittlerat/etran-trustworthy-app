@@ -6,6 +6,7 @@ import { FaCheck } from "react-icons/fa6";
 import { GiWallet } from "react-icons/gi";
 import { LuChartNoAxesCombined } from "react-icons/lu";
 import { data } from "@/store/data";
+import Footer from "@/components/Socials";
 
 export default function Home() {
   return (
@@ -198,38 +199,51 @@ export default function Home() {
                     style={{objectPosition: '', }}
             />
           </div>     
-      </section>
-      <section className="features-section">
-            <h1 className="text-5xl text-center pt-10 capitalize">
-          First class software
-        </h1>
-        <p className=" text-lg text-center max-w-[55ch] mx-auto py-4">
-Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
-              </p>
-              <div className="cards-container grid grid-cols-1 sm:grid-cols-4 mx-15 gap-8 text-center">
-                <div className="w-full h-45 flex flex-col justify-around">
-                  <Image src={'/wallet.png'} alt="secure storage" width={300} height={300}/>
-                  <p className="capitalize text-md">safe storage</p>
-                </div>
-                <div className="w-full h-45 flex flex-col justify-around">
-                  <Image src={'/secure.png'} alt="secure" width={300} height={300}/>
-                  <p className="capitalize text-md">secure</p>
+        </section>
+        <section className="features-section">
+              <h1 className="text-5xl text-center pt-10 capitalize">
+            First class software
+          </h1>
+          <p className=" text-lg text-center max-w-[55ch] mx-auto py-4">
+  Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
+                </p>
+                <div className="cards-container grid grid-cols-1 sm:grid-cols-4 mx-15 gap-8 text-center">
+                  <div className="w-full h-45 flex flex-col justify-around">
+                    <Image src={'/wallet.png'} alt="secure storage" width={300} height={300}/>
+                    <p className="capitalize text-md">safe storage</p>
+                  </div>
+                  <div className="w-full h-45 flex flex-col justify-around">
+                    <Image src={'/secure.png'} alt="secure" width={300} height={300}/>
+                    <p className="capitalize text-md">secure</p>
 
-                </div>
-                <div className="w-full h-45 flex flex-col justify-around">
-                  <Image src={'/finance.png'} alt="earn interest" width={300} height={300}/>
-                  <p className="capitalize text-md">earn interest</p>
+                  </div>
+                  <div className="w-full h-45 flex flex-col justify-around">
+                    <Image src={'/finance.png'} alt="earn interest" width={300} height={300}/>
+                    <p className="capitalize text-md">earn interest</p>
 
-                </div>
-                <div className="w-full h-45 flex flex-col justify-around">
-                  <Image src={'/people.png'} alt="family plans" width={300} height={300}/>
-                  <p className="capitalize text-md">family plans</p>
+                  </div>
+                  <div className="w-full h-45 flex flex-col justify-around">
+                    <Image src={'/people.png'} alt="family plans" width={300} height={300}/>
+                    <p className="capitalize text-md">family plans</p>
 
+                  </div>
+                  {/* download the icons and put the in here */}
                 </div>
-                {/* download the icons and put the in here */}
-              </div>
-      </section>
+        </section>
+        <section className="get-started">
+          <div className="container w-fit mx-auto relative p-4">
+            <Image src={'/daria-nepriakhina-_XR5rkprHQU-unsplash.jpg'} alt="get started" width={720} height={350} className="mx-auto rounded-2xl"/>
+            <div className="get-started-details absolute left-[10%] bottom-[10%]">
+              <p className="max-w-[20ch] text-3xl text-(--background-2) my-4">Download Etran and manage everything from your phone.</p>
+              <button className="capitalize p-4 text-(--forground) bg-(--accent-1) rounded-lg">
+                get started
+              </button>
+            </div>
+          </div>
+        </section>
+        <Footer/>
 
+ 
       </section>
     </main>
   );
