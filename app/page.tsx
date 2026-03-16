@@ -11,7 +11,7 @@ import Button from '@/components/button';
 
 export default function Home() {
   return (
-    <main className=" grid grid-cols-1 md:grid-cols-5 min-h-screen bg-(--background-3)">
+    <main className=" grid grid-cols-1 md:grid-cols-5 min-h-screen bg-(--background-3) max-w-350 mx-auto">
       <section className="md:sticky md:top-0 md:h-screen col-span-2 sidebar-section bg-(--background-1) px-10   ">
         <Navbar />
         <h1 className="capitalize text-5xl text-(--background-3)">
@@ -66,7 +66,7 @@ export default function Home() {
           <h1 className="text-3xl max-w-[25ch] text-center mx-auto py-10">
             We escalate transfer efficiency and productivity
           </h1>
-          <div className="flex justify-evenly px-10 py-10 gap-4">
+          <div className="flex justify-evenly px-10 py-10 gap-4 flex-wrap">
             <Image
               src="/blooming-logo.svg"
               alt="Company logos"
