@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between py-8">
+    <nav className="flex justify-between py-4">
       <div className="flex gap-4 items-center">
         <Image
           src={"/etran-logo.png"}

@@ -9,27 +9,27 @@ import { data } from "@/store/data";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-(--background-3)">
-      <section className="sidebar-section bg-(--background-1) px-10">
+    <main className=" grid grid-cols-1 md:grid-cols-5 min-h-screen bg-(--background-3)">
+      <section className="md:sticky md:top-0 md:h-[110vh] col-span-2 sidebar-section bg-(--background-1) px-10   ">
         <Navbar />
-        <h1 className="capitalize text-8xl text-(--background-3)">
+        <h1 className="capitalize text-5xl text-(--background-3)">
           money tranfers
         </h1>
-        <h1 className="capitalize text-8xl text-(--background-3)">
+        <h1 className="capitalize text-5xl text-(--background-3)">
           made <span className="text-(--accent-1)">simple</span>
         </h1>
-        <p className="text-(--background-3) text-3xl py-4">
+        <p className="text-(--background-3) text-2xl py-4">
           No personal credit checks or founder guarantee.
         </p>
-        <div className="card-container my-6">
-          <h1 className="capitalize text-2xl text-(--accent-1)">
+        <div className="card-container my-4">
+          <h1 className="capitalize text-xl text-(--accent-1)">
             our offerings
           </h1>
           <Card />
         </div>
         <Socials />
       </section>
-      <section className="main-content-section">
+      <section className="col-span-3 main-content-section">
         <div className="hero-container relative capitalize text-xl text-(--background-2) ">
           <Image
             src={"/nel-ranoko-iaHFmpXVltw-unsplash.jpg"}
@@ -193,7 +193,7 @@ export default function Home() {
                     alt="standing-man-holding-phone"
                     width={720}
                     height={350}
-                    className="object-cover object-top max-h-[350px] mx-auto "
+                    className="object-cover object-top max-h-[350px] mx-auto  my-6"
                     style={{objectPosition: '', }}
             />
         </div>     
@@ -205,7 +205,11 @@ export default function Home() {
         <p className=" text-lg text-center max-w-[55ch] mx-auto py-4">
 Get real-time insights, seamless transactions, and advanced tools to manage your wealth effortlessly.
               </p>
-              <div className="cards-container">
+              <div className="cards-container grid grid-cols-1 sm:grid-cols-4 mx-15 gap-8 text-center">
+                <div className="bg-amber-200 h-50">card-1</div>
+                <div className="bg-amber-200 h-50">card-2</div>
+                <div className="bg-amber-200 h-50">card-3</div>
+                <div className="bg-amber-200 h-50">card-4</div>
                 {/* download the icons and put the in here */}
               </div>
       </section>
